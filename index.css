@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    /* ### Primary */
+    --Violet: hsl(257, 40%, 49%);
+    ---Soft-Magenta: hsl(300, 69%, 71%);
+
+}
+
+body{
+    background-image: url('/images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Violet);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+}
+.logo{
+    background-image: url('/images/logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 206px;
+    height: 52px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+.main_img{
+    background-image: url('/images/illustration-mockups.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 64%;
+    height: 36vw;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    padding: 26px;
+}
+.info h2{
+    color: white;
+    font-size: 2rem;
+}
+.info p{
+    color:rgb(208, 203, 203);
+}
+.info a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--Violet);
+    background-color: white;
+    width: 184px;
+    padding: 14px 44px;
+    border-radius: 31px;
+}
+.info a:hover{
+    background-color: var(---Soft-Magenta);
+}
+footer{
+    display: flex;
+    justify-content: end;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 107px;
+}
+.icon .meta{
+    background-image: url('/images/logo-facebook.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.icon .twitter{
+    background-image: url('/images/logo-twitter.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.icon .instagram{
+    background-image: url('/images/logo-instagram.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.allIcon:hover{
+    background-color: var(---Soft-Magenta);
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 758px){
+    body{
+        background-image: url('/images/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main{
+        flex-direction: column;
+    }
+    .main_img{
+        width: 100%;
+        height: 63vw;
+    }
+    .info{
+        text-align: center;
+        width: 100%;
+        align-items: center
+    }
+    footer{
+        justify-content: center;
+    }
+}
